@@ -1,0 +1,23 @@
+﻿body {
+    background-image: url(../pizza.jpg);
+    background-size:cover;
+}
+
+.headerlink{
+    font-weight: 900;
+    color: lawngreen;
+    font-size:larger;
+    border:thick;
+    border:hidden;
+}
+
+.header {
+    font-weight: 900;
+    color: lawngreen;
+    font-family: sans-serif;
+}
+
+.congrats {
+    background-image: url(../pizza.jpg);
+    background-size: cover;
+}

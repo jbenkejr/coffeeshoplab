@@ -1,0 +1,25 @@
+﻿<link href="~/css/StyleSheet.css" rel="stylesheet" />
+
+@{
+    ViewData["Title"] = "AddUser";
+}
+
+<h1>Register New User!</h1>
+
+<form action="../Registration/DisplayUser" method="post">
+    <input type="text" name="FirstName" placeholder="First Name" /> <br />
+    <input type="text" name="LastName" placeholder="Last Name" /> <br />
+    <label>Birthday</label>
+    <input type="date" name="DOB" /> <br />
+    <label>Email</label>
+    <input type="email" name="Email" placeholder="example@@example.com" /> <br />
+    <label>Username</label>
+    <input type="text" name="UserName" value="" /> <br />
+    <label>Password</label>
+    <input type="password" name="Password" /> <p>Must be 8 characters and include a number & symbol</p>
+
+    <input type="submit" class="btn-outline-success" value="Add User!" />
+
+    @Html.ValidationSummary()
+</form>
+
