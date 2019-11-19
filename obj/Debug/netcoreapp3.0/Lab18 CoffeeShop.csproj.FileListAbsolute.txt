@@ -126,3 +126,4 @@ C:\Users\jbenk\Desktop\bootcamp2019\Lab18 CoffeeShop\obj\Debug\netcoreapp3.0\Lab
 C:\Users\jbenk\Desktop\bootcamp2019\Lab18 CoffeeShop\obj\Debug\netcoreapp3.0\Lab18 CoffeeShop.pdb
 C:\Users\jbenk\Desktop\bootcamp2019\Lab18 CoffeeShop\obj\Debug\netcoreapp3.0\Razor\Views\Registration\AddUser.cshtml.g.cs
 C:\Users\jbenk\Desktop\bootcamp2019\Lab18 CoffeeShop\obj\Debug\netcoreapp3.0\Razor\Views\Registration\DisplayUser.cshtml.g.cs
+C:\Users\jbenk\Desktop\bootcamp2019\Lab18 CoffeeShop\obj\Debug\netcoreapp3.0\Razor\Views\Registration\Login.cshtml.g.cs

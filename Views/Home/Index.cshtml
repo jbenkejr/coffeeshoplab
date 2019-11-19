@@ -1,10 +1,15 @@
-﻿<link href="~/css/StyleSheet.css" rel="stylesheet" />
+﻿@*<link href="~/css/StyleSheet.css" rel="stylesheet" />*@
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
     <h1 class="header display-4"><blink>It's Pizza Time!</blink></h1>
+
+<div class=btn-outline-success>
     <a class="headerlink nav-link text-dark" asp-area="" asp-controller="Registration" asp-action="AddUser">Register Here!</a>
+</div>
+
+<div class="btn-outline-warning">
+    <a class="nav-link text-dark" asp-area="" asp-controller="Registration" asp-action="Login">Login</a>
 </div>

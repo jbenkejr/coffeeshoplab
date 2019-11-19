@@ -1,6 +1,7 @@
 ﻿body {
-    background-image: url(../pizza.jpg);
-    background-size:cover;
+    /*background-image: url(../pizza.jpg);*/
+    background-color: slategray;
+    /*background-size:cover;*/
 }
 
 .headerlink{
@@ -18,6 +19,7 @@
 }
 
 .congrats {
-    background-image: url(../pizza.jpg);
-    background-size: cover;
+    /*background-image: url(../pizza.jpg);
+    background-size: cover;*/
+    background-color: slategray;
 }

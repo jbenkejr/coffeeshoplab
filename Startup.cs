@@ -23,8 +23,20 @@ namespace Lab18_CoffeeShop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
+            services.AddSession();
+                //options =>
+                ////{
+                ////    //set a short time out for easy testing
+                ////    //options.IdleTimeout = TimeSpan.FromDays(1);
+                ////    options.Cookie.HttpOnly = true;
+                ////    // make the session cookie essential
+                ////    options.Cookie.IsEssential = true;
+                ////}
+                //);
             services.AddControllersWithViews();
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -41,7 +53,7 @@ namespace Lab18_CoffeeShop
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

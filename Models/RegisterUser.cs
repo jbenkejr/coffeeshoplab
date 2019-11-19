@@ -23,8 +23,20 @@ namespace Lab18_CoffeeShop.Models
         [StringLength(15, MinimumLength = 5, ErrorMessage= "Invalid Username")]
         public string UserName { get; set; }
         [Required]
-        [RegularExpression(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$", ErrorMessage= "Invalid Password!")]
+        [RegularExpression(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$", ErrorMessage = "Invalid Password!")]
         public string PassWord { get; set; }
+
+        public RegisterUser() { }
+
+        public RegisterUser(string firstName, string lastName, DateTime dob, string email, string userName, string passWord)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            DOB = dob;
+            Email = email;
+            UserName = userName;
+            PassWord = passWord;
+        }
 
     }
 }
